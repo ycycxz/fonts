@@ -1,19 +1,19 @@
 import { fontSplit } from 'cn-font-split';
 
 fontSplit({
-    FontPath: './1.ttf', // Path to your font file
+    FontPath: './SNPro-Bold.woff2', // Path to your font file
     destFold: './dist', // Directory where the split fonts will be saved
     
     autoChunk: true, // Automatically split remaining Unicode characters
-    unicodeRank: [[0x4e00, 0x9fa5]], // Prioritize the specified Unicode range
-    chunkSize: 200*1024, // Desired size of each chunk in bytes (70KB)
+    //unicodeRank: [[0x4e00, 0x9fa5]], // Prioritize the specified Unicode range
+    chunkSize: 7*1024, // Desired size of each chunk in bytes (70KB)
     chunkSizeTolerance: 1.7, // Tolerance for chunk size variation
     maxAllowSubsetsCount: 600, // Maximum number of subsets allowed
     cssFileName: 'result.css', // Name of the output CSS file
     testHTML: true, // Output an HTML test file
     reporter: true, // Output a report file
     previewImage: {
-        text: '远程协助\nYCYCXZ', // Text to display in the preview
+        text: 'YCYCXZ', // Text to display in the preview
         name: 'preview' // Name of the preview image file
     },
     log: console.log, // Custom logging function
